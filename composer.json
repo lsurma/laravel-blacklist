@@ -1,0 +1,33 @@
+{
+    "name": "lsurma/laravel-blacklist",
+    "description": "Simple blacklist package for laravel",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^6.0",
+        "illuminate/database": "^6.0",
+        "illuminate/console": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukasz Surma",
+            "email": "kontakt@lsurma.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LSurma\\LaravelBlacklist\\Database\\Seeds\\": "database/seeds/",
+            "LSurma\\LaravelBlacklist\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LSurma\\LaravelBlacklist\\LaravelBlacklistServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
